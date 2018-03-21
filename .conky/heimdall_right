@@ -79,7 +79,6 @@ ${color #ddaa00} ${top_mem name 1} $alignr ${top_mem pid 1} ${top_mem cpu 1} ${t
 ${font Arial:bold:size=10}${color 7A5ADA}Temperature ${hr 2}$color$font
 
 CPU: ${alignr}${execi 15 sensors | grep 'Physical id 0' | cut -c 15-22}°C
-ATI GPU: ${alignr}${execi 15 aticonfig --odgt | grep 'Sensor 0' | cut -c 42-47}°C
 
 ${font Arial:bold:size=10}${color 7A5ADA}HDD I/O ${hr 2}$color$font
 
